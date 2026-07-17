@@ -35,7 +35,7 @@ retriever = vector_store.as_retriever(search_kwargs={"k": 3})
 #membuat prompt
 template = """You are a helpful assistant.
 
-Answer ONLY based on the provided context.
+You can explain the answer in your own words, but the information MUST be based on the provided context.
 
 If the answer is not in the context, reply:
 
@@ -43,7 +43,7 @@ If the answer is not in the context, reply:
 
 Always answer in Indonesian, even if the document is in English.
 
-At the end, mention the source page.
+For every answer, you MUST include the source page number and the EXACT original quote from the text that supports your answer at the very end.
 
 Context: {context}
 Question: {question}
