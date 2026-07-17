@@ -16,7 +16,7 @@ loader = PyPDFLoader("data/BERT (Devlin dkk., 2019).pdf")
 dokumen = loader.load()
 
 #melakukan chunking
-pemecah_teks = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+pemecah_teks = RecursiveCharacterTextSplitter(chunk_size=3000, chunk_overlap=500)
 potongan_teks = pemecah_teks.split_documents(dokumen)
 
 #membuat embedding
