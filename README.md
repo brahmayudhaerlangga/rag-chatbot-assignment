@@ -46,7 +46,7 @@ Kamu tinggal mengetik pertanyaan dan menekan Enter. Jika ingin keluar, cukup ket
 ## Struktur Folder
 - `app.py`: File utama berisi kode program chatbot.
 - `requirements.txt`: Daftar library Python yang digunakan.
-- `data/`: Folder untuk menyimpan file PDF (contoh: `contoh.pdf`).
+- `data/`: Folder untuk menyimpan file PDF (contoh: `1810.04805.pdf`).
 - `chroma_db/`: Folder database Chroma (otomatis dibuat oleh program saat dijalankan).
 - `screenshots/`: Folder untuk menyimpan gambar hasil atau screenshot aplikasi.
 - `.env.example`: Contoh format file untuk menaruh API Key.

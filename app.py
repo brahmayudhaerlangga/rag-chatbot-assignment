@@ -12,7 +12,7 @@ from langchain_core.output_parsers import StrOutputParser
 load_dotenv()
 
 #membaca PDF
-loader = PyPDFLoader("data/contoh.pdf")
+loader = PyPDFLoader("data/1810.04805.pdf")
 dokumen = loader.load()
 
 #melakukan chunking
