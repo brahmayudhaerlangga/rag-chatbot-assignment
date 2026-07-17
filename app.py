@@ -20,7 +20,7 @@ pemecah_teks = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200
 potongan_teks = pemecah_teks.split_documents(dokumen)
 
 #membuat embedding
-embedding = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+embedding = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
 #menyimpan vector store
 vector_store = Chroma.from_documents(
@@ -58,7 +58,7 @@ def gabung_dokumen(docs):
     return "\n\n".join(hasil)
 
 #membuat rag chain
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
 rag_chain = (
     {"context": retriever | gabung_dokumen, "question": RunnablePassthrough()}
     | prompt
