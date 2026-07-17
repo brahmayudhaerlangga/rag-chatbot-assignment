@@ -58,7 +58,7 @@ def gabung_dokumen(docs):
     return "\n\n".join(hasil)
 
 #membuat rag chain
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+llm = ChatGoogleGenerativeAI(model="gemini-flash-latest")
 rag_chain = (
     {"context": retriever | gabung_dokumen, "question": RunnablePassthrough()}
     | prompt

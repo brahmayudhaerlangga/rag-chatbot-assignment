@@ -5,7 +5,7 @@ Tugas ini adalah aplikasi chatbot berbasis RAG (Retrieval-Augmented Generation) 
 ## Tools yang digunakan
 - Python
 - LangChain
-- Google Gemini 1.5 Flash
+- Google Gemini (gemini-flash-latest)
 - Google Embedding (gemini-embedding-001)
 - Chroma (untuk database vektor)
 - PyPDFLoader
